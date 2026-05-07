@@ -1,5 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
-
+const API_BASE = import.meta.env.VITE_API_URL || 'https://sportscentreapp-production.up.railway.app/api';
 function getToken(): string | null {
   const stored = localStorage.getItem('user');
   if (!stored) return null;
